@@ -4,56 +4,57 @@
         <title>Contact Me</title>
         <meta charset="UTF-8">
         <meta name="author" content="Scarlett Jet">
-        <meta name="keywrods" content="HTML, CSS, Web Design">
-        <meta name="description" content="Homepage">
+        <meta name="keywords" content="HTML, CSS, Web Design">
+        <meta name="description" content="Contact page of Scarlett Jet's personal website">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/normalize.css" type="text/css">
         <link rel="stylesheet" href="css/main.css" type="text/css">
         <link rel="icon" href="images/favicon.ico" type="image/x-icon">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-        <script src="script.js" defer></script>
-
     </head>
     <body>
         <header>
-            <a href="index.html" class="logo">Scarlett Jet</a>
-    
+            <a href="index.html" class="logo" aria-label="Go to homepage">Scarlett Jet</a>
+        
             <nav>
-                <a href="index.html"> Home</a>
-                <a href="about.html" >About</a>
-                <a href="portfolio.html" >Portfolio</a>
-                <a href="contact.html" class="active"> Contact</a>
-
+                <a href="index.html"  aria-label="Go to Home page">Home</a>
+                <a href="about.html" aria-label="Go to About page">About</a>
+                <a href="portfolio.html" aria-label="Go to Portfolio page">Portfolio</a>
+                <a href="contact.html" class="active" aria-label="Go to Contact page">Contact</a>
             </nav>
         </header>
-
+        
         <section class="contact-container">
             <h1>Contact Me!</h1>
             <form>
-                <input type="text" id="firstName" placeholder="First Name" required>
-                <input type="text" id="lastName" placeholder="Last Name" required>
-                <input type="email" id="email" placeholder="Email" required>
-                <input type="text" id="mobile" placeholder="Mobile" required>
+                <input type="text" id="firstName" placeholder="First Name" required aria-label="First Name">
+                <input type="text" id="lastName" placeholder="Last Name" required aria-label="Last Name">
+                <input type="email" id="email" placeholder="Email" required aria-label="Email">
+                <input type="tel" id="mobile" placeholder="Mobile" required aria-label="Mobile">
                 <h4>Type Your Message Here...</h4>
-                <textarea id="message" placeholder="Your Message" required></textarea>
+                <textarea id="message" placeholder="Your Message" required aria-label="Message"></textarea>
                 <input type="submit" value="Send" id="button">
             </form>
         </section>
         
         <footer>
             <div class="footer-content">
-                <p>&copy; 2024 Scarlett Jet. All rights reserved.</p>
+                <p>Copyright &copy; 2024 Scarlett Jet. All rights reserved.</p>
                 <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/scarlettjet/" target="_blank">
+                    <!-- Links open in new tabs. Adding rel="noopener noreferrer" prevents security and performance issues, 
+                    like leaking the referring page's address or enabling potential malicious scripts on the linked page to access the current page. -->
+                    <a href="https://www.linkedin.com/in/scarlettjet/" target="_blank" rel="noopener noreferrer" aria-label="Visit Scarlett Jet's LinkedIn profile" title="Visit LinkedIn Profile">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://github.com/Jscarrs" target="_blank">
+                    <a href="https://github.com/Jscarrs" target="_blank" rel="noopener noreferrer" aria-label="Visit Scarlett Jet's GitHub profile" title="Visit GitHub Profile">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.instagram.com/jxettae/" target="_blank">
+                    <a href="https://www.instagram.com/jxettae/" target="_blank" rel="noopener noreferrer" aria-label="Visit Scarlett Jet's Instagram profile" title="Visit Instagram Profile">
                         <i class="fab fa-instagram"></i>
                     </a>
+                </div>
+            </div>
         </footer>
+        
     </body>
 </html>
-    
