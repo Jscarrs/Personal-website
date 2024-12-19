@@ -26,16 +26,19 @@
         
         <section class="contact-container">
             <h1>Contact Me!</h1>
-            <form>
-                <input type="text" id="firstName" placeholder="First Name" required aria-label="First Name">
-                <input type="text" id="lastName" placeholder="Last Name" required aria-label="Last Name">
-                <input type="email" id="email" placeholder="Email" required aria-label="Email">
-                <input type="tel" id="mobile" placeholder="Mobile" required aria-label="Mobile">
+            <form id="contactForm" action="https://formspree.io/f/xgvegwde" method="POST">
+                <input type="text" id="firstName" name="firstName" placeholder="First Name" required aria-label="First Name">
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name" required aria-label="Last Name">
+                <input type="email" id="email" name="email" placeholder="Email" required aria-label="Email">
+                <input type="tel" id="mobile" name="mobile" placeholder="Mobile" required aria-label="Mobile">
                 <h4>Type Your Message Here...</h4>
-                <textarea id="message" placeholder="Your Message" required aria-label="Message"></textarea>
+                <textarea id="message" name="message" placeholder="Your Message" required aria-label="Message"></textarea>
                 <input type="submit" value="Send" id="button">
             </form>
+            <p id="successMessage" style="display:none;">Thank you! Your message has been sent successfully.</p>
         </section>
+        
+        
         
         <footer>
             <div class="footer-content">
